@@ -2,37 +2,224 @@ import React from "react";
 
 export default function Shoorty() {
   return (
-    <div className="flex justify-between">
-      <div className="flex-row container mx-auto my-20 bg-white border-red-500 border-2 rounded-xl p-5 shadow ">
+    <div className="flex ">
+      <div className="bg-white lg:mx-20 my-20 lg:w-1/3 sm:w-1/2 border-red-500 border-2 rounded-[20px] p-5 shadow-2xl ">
         <div className="flex justify-around mt-2">
-          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer  hover:font-bold trasition-transform duration-100">
-            Cortar URL
+          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer text-gray-400 hover:text-black trasition-transform duration-100">
+            <span className="text-gray-200 hover:stroke-black hover:font-bold  ">
+              <svg
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 9H5V9C2.79086 9 1 7.20914 1 5V5V5V5C1 2.79086 2.79086 1 5 1H7"
+                  stroke="#30374F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M12 1H14V1C16.2091 1 18 2.79086 18 5"
+                  stroke="#30374F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M5 5H13"
+                  stroke="#30374F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M14.5 17C16.9853 17 19 14.9853 19 12.5C19 10.0147 16.9853 8 14.5 8C12.0147 8 10 10.0147 10 12.5C10 14.9853 12.0147 17 14.5 17Z"
+                  stroke="#30374F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M16.0131 11.609L14.1231 13.4979L12.9868 12.365"
+                  stroke="#30374F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            &ensp; Cortar URL
           </button>
-          {/* <span className=""></span> */}
-          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer  hover:font-bold trasition-transform duration-100">
-            Crear QR
+          <span className="border-gray-300 border-r"></span>
+          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer text-gray-400 hover:text-black trasition-transform duration-100">
+            <span className="text-gray-400">
+              <svg
+                className="stroke-[#7D89B0] hover:stroke-black text-black"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6H10V10H6V6Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M6 14H10V18H6V14Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M18 10H14V6L18 6V10Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M16.0354 15.9646C16.055 15.9841 16.055 16.0158 16.0354 16.0353C16.0159 16.0548 15.9842 16.0548 15.9647 16.0353C15.9452 16.0158 15.9452 15.9841 15.9647 15.9646C15.9842 15.9451 16.0159 15.9451 16.0354 15.9646Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M14.0354 13.9646C14.055 13.9841 14.055 14.0158 14.0354 14.0353C14.0159 14.0548 13.9842 14.0548 13.9647 14.0353C13.9452 14.0158 13.9452 13.9841 13.9647 13.9646C13.9842 13.9451 14.0159 13.9451 14.0354 13.9646Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M14.0354 17.9646C14.055 17.9841 14.055 18.0158 14.0354 18.0353C14.0159 18.0548 13.9842 18.0548 13.9647 18.0353C13.9452 18.0158 13.9452 17.9841 13.9647 17.9646C13.9842 17.9451 14.0159 17.9451 14.0354 17.9646Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M18.0354 17.9646C18.055 17.9841 18.055 18.0158 18.0354 18.0353C18.0159 18.0548 17.9842 18.0548 17.9647 18.0353C17.9452 18.0158 17.9452 17.9841 17.9647 17.9646C17.9842 17.9451 18.0159 17.9451 18.0354 17.9646Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M21.5 7.978V4.5C21.5 3.395 20.605 2.5 19.5 2.5H16.022"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M7.978 2.5H4.5C3.395 2.5 2.5 3.395 2.5 4.5V7.978"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M2.5 16.022V19.5C2.5 20.605 3.395 21.5 4.5 21.5H7.978"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M16.022 21.5H19.5C20.605 21.5 21.5 20.605 21.5 19.5V16.022"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M18.0354 13.9646C18.055 13.9841 18.055 14.0158 18.0354 14.0353C18.0159 14.0548 17.9842 14.0548 17.9647 14.0353C17.9452 14.0158 17.9452 13.9841 17.9647 13.9646C17.9842 13.9451 18.0159 13.9451 18.0354 13.9646Z"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            &ensp; Crear QR
           </button>
         </div>
         <form className="my-14">
           <div className="mb-8">
-            <h3 className="text-center text-lg font-bold">Hazla Shoorty</h3>
-            <h4 className="text-center text-lg font-bold">
+            <h3 className="text-center text-lg text-[#404968] font-bold">
+              Hazla Shoorty
+            </h3>
+            <h4 className="text-center text-base text-[#404968] font-bold">
               Copia y pega tu <u>URL</u>
             </h4>
           </div>
-          <div className="flex mt-5 aling-center justify-around">
-            <img />
+          <div className="flex mt-5  aling-center justify-center -space-x-14">
+            <svg
+              className="fixed align-center"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 22H12V22C9.79086 22 8 20.2091 8 18V18V18V18C8 15.7909 9.79086 14 12 14H14"
+                stroke="#7D89B0"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 18H22"
+                stroke="#7D89B0"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 14L24 14V14C26.2091 14 28 15.7909 28 18V18V18L28 18C28 20.2091 26.2091 22 24 22L22 22"
+                stroke="#7D89B0"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
             <input
               type="text"
               placeholder="pegar url"
-              className="bg-white p-2 border-hidden outline-none focus:none rounded-full"
+              className="flex bg-gray-200 mix-blend-miltiply ms:w-16 w-76 p-4 border-hidden outline-none focus:none rounded-full "
             />
-            <button className="flex bg-blue-600 p-2 text-white aling-center rounded-full shadow">
+            <button className="flex bg-cyan-500 mix-blend-miltiply px-8 text-white items-center aling-center shadow-2xl rounded-full ">
               CREAR
             </button>
           </div>
         </form>
-        <div className="flex justify-between mx-2 mt-2">
+        <div className="flex justify-between items-center mx-2 mt-2">
           <svg
             width="101"
             height="23"
@@ -245,6 +432,9 @@ export default function Shoorty() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="w-1/2 mx-40 ">
+        <h1></h1>
       </div>
     </div>
   );

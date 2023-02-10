@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="bg-trasparent">
+    <div className="flex justify-center lg:justify-start bg-trasparent">
       <svg
-        className="bg-white mt-5 mx-10"
-        width="56"
-        height="30"
+        className="flex bg-white mt-5 mx-20 sm:justify-center md:justify-center rounded-lg"
+        width="82"
+        height="82"
         viewBox="0 0 56 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
