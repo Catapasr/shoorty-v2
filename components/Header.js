@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="flex justify-center lg:justify-start bg-trasparent">
+    <div className="flex justify-center lg:justify-start bg-trasparent md:mt-[58px] ">
       <svg
-        className="flex bg-white mt-5 mx-20 sm:justify-center md:justify-center rounded-lg"
+        className="flex bg-white mt-5 mx-20 sm:justify-center md:justify-center md:items-start rounded-lg"
         width="82"
         height="82"
         viewBox="0 0 56 30"

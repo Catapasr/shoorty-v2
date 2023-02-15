@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Shoorty() {
   return (
-    <div className="flex ">
-      <div className="bg-white lg:mx-20 my-20 lg:w-1/3 sm:w-1/2 border-red-500 border-2 rounded-[20px] p-5 shadow-2xl ">
-        <div className="flex justify-around mt-2">
+    <div className="flex flex-wrap justify-center lg:justify-start">
+      <div className="bg-white md:w-1/2 lg:w-1/3 xl:h-1/4 lg:mx-20 my-20  rounded-2xl lg:rounded-[20px] p-5 shadow-2xl ">
+        <div className="flex justify-center mt-2">
           <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer text-gray-400 hover:text-black trasition-transform duration-100">
-            <span className="text-gray-200 hover:stroke-black hover:font-bold  ">
+            <span className="text-gray-300  ">
               <svg
                 width="20"
                 height="18"
@@ -58,10 +58,14 @@ export default function Shoorty() {
             &ensp; Cortar URL
           </button>
           <span className="border-gray-300 border-r"></span>
-          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer text-gray-400 hover:text-black trasition-transform duration-100">
-            <span className="text-gray-400">
+          <button className="flex h-10 align-center items-center p-3 bg-white cursor-pointer text-gray-400 trasition-transform duration-100  hover:text-black ">
+            <span
+              className="text-gray-400  hover:text-black 
+            trasition-transform ease-in duration-100"
+            >
               <svg
-                className="stroke-[#7D89B0] hover:stroke-black text-black"
+                className=" hover:text-black 
+                trasition-transform duration-100"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -170,51 +174,52 @@ export default function Shoorty() {
         </div>
         <form className="my-14">
           <div className="mb-8">
-            <h3 className="text-center text-lg text-[#404968] font-bold">
+            <h3 className="text-center text-lg text-gray-700 font-bold">
               Hazla Shoorty
             </h3>
-            <h4 className="text-center text-base text-[#404968] font-bold">
+            <h4 className="text-center text-base text-gray-700 font-bold">
               Copia y pega tu <u>URL</u>
             </h4>
           </div>
-          <div className="flex mt-5  aling-center justify-center -space-x-14">
-            <svg
-              className="fixed align-center"
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14 22H12V22C9.79086 22 8 20.2091 8 18V18V18V18C8 15.7909 9.79086 14 12 14H14"
-                stroke="#7D89B0"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+          <div className="flex bg-[#EFF1F5] align-middle justify-center items-center rounded-[30px] ">
+            <div className="flex p-2 align-middle justify-center items-center">
+              <svg
+                className=""
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 22H12V22C9.79086 22 8 20.2091 8 18V18V18V18C8 15.7909 9.79086 14 12 14H14"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 18H22"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 14L24 14V14C26.2091 14 28 15.7909 28 18V18V18L28 18C28 20.2091 26.2091 22 24 22L22 22"
+                  stroke="#7D89B0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="pegar url"
+                className="flex bg-[#EFF1F5] justify-content-between align-center text-center border-hidden outline-none focus:none"
               />
-              <path
-                d="M14 18H22"
-                stroke="#7D89B0"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 14L24 14V14C26.2091 14 28 15.7909 28 18V18V18L28 18C28 20.2091 26.2091 22 24 22L22 22"
-                stroke="#7D89B0"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <input
-              type="text"
-              placeholder="pegar url"
-              className="flex bg-gray-200 mix-blend-miltiply ms:w-16 w-76 p-4 border-hidden outline-none focus:none rounded-full "
-            />
-            <button className="flex bg-cyan-500 mix-blend-miltiply px-8 text-white items-center aling-center shadow-2xl rounded-full ">
+            </div>
+            <button className="flex w-[116px] px-6 py-4 bg-[#5EC6E8] text-white rounded-full justify-center items-center shadow-3xl">
               CREAR
             </button>
           </div>
